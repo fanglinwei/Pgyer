@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		283F4F6D236A8A190094A4B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F4F6C236A8A190094A4B3 /* AppDelegate.swift */; };
+		283F4F6F236A8A190094A4B3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F4F6E236A8A190094A4B3 /* MainViewController.swift */; };
+		283F4F71236A8A1A0094A4B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 283F4F70236A8A1A0094A4B3 /* Assets.xcassets */; };
+		283F4F74236A8A1A0094A4B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283F4F72236A8A1A0094A4B3 /* Main.storyboard */; };
+		287D72DB236AB911003919DD /* APIWechatTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D72DA236AB911003919DD /* APIWechatTarget.swift */; };
+		287D72DE236B1125003919DD /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D72DD236B1125003919DD /* MainWindowController.swift */; };
+		287D72E0236B1244003919DD /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D72DF236B1244003919DD /* Storyboard.swift */; };
+		287D72E2236B12C3003919DD /* MainKeyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D72E1236B12C3003919DD /* MainKeyController.swift */; };
+		28A00D0B236A9DC3009F443B /* DragContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A00D0A236A9DC3009F443B /* DragContainer.swift */; };
+		28A00D0D236A9DEA009F443B /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A00D0C236A9DEA009F443B /* FileInfo.swift */; };
+		28A00D0F236A9E0F009F443B /* PasteboardTypeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A00D0E236A9E0F009F443B /* PasteboardTypeExtension.swift */; };
+		28A00D13236A9E4A009F443B /* Formator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A00D11236A9E4A009F443B /* Formator.swift */; };
+		28A00D14236A9E4A009F443B /* IOHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A00D12236A9E4A009F443B /* IOHelper.swift */; };
+		28A00D17236AA1B7009F443B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A00D16236AA1B7009F443B /* ViewController.swift */; };
+		28A00D19236AA1FA009F443B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A00D18236AA1FA009F443B /* MainView.swift */; };
+		28A00D1B236AAA53009F443B /* Pgyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A00D1A236AAA53009F443B /* Pgyer.swift */; };
+		28A00D3E236AABB0009F443B /* APIPgyerTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A00D24236AABB0009F443B /* APIPgyerTarget.swift */; };
+		28A00D48236AABB0009F443B /* APITimeoutPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A00D2F236AABB0009F443B /* APITimeoutPlugin.swift */; };
+		28A00D4B236AABB0009F443B /* APILoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A00D32236AABB0009F443B /* APILoad.swift */; };
+		28A00D4C236AABB0009F443B /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A00D34236AABB0009F443B /* APIError.swift */; };
+		28A00D4D236AABB0009F443B /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A00D35236AABB0009F443B /* APIResult.swift */; };
+		28A00D4E236AABB0009F443B /* APICancellableWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A00D36236AABB0009F443B /* APICancellableWrapper.swift */; };
+		28A00D4F236AABB0009F443B /* APIOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A00D37236AABB0009F443B /* APIOption.swift */; };
+		28A00D50236AABB0009F443B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A00D38236AABB0009F443B /* API.swift */; };
+		28A00D52236AACC4009F443B /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A00D51236AACC4009F443B /* Result.swift */; };
+		28A00D59236AB286009F443B /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A00D58236AB286009F443B /* NetworkExtension.framework */; };
+		28B6374C236BDFF100C7210D /* Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B6374B236BDFF100C7210D /* Analysis.swift */; };
+		28B63750236C082100C7210D /* MainPrepareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B6374F236C082100C7210D /* MainPrepareController.swift */; };
+		28B63752236C087C00C7210D /* PrepareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B63751236C087C00C7210D /* PrepareView.swift */; };
+		28B63754236C11F300C7210D /* MainWechatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B63753236C11F300C7210D /* MainWechatController.swift */; };
+		28B63756236C169700C7210D /* Wechat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B63755236C169700C7210D /* Wechat.swift */; };
+		28B63758236C315700C7210D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B63757236C315700C7210D /* Extension.swift */; };
+		87937B8A0069C56001B6619D /* Pods_Pgyer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B780C7F993B69319A292C38C /* Pods_Pgyer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04823A8183EB9F80C2A647A7 /* Pods-Pgyer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pgyer.debug.xcconfig"; path = "Target Support Files/Pods-Pgyer/Pods-Pgyer.debug.xcconfig"; sourceTree = "<group>"; };
+		09DCF93147B488F9B6699514 /* Pods-Pgyer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pgyer.release.xcconfig"; path = "Target Support Files/Pods-Pgyer/Pods-Pgyer.release.xcconfig"; sourceTree = "<group>"; };
+		1D075C46A31D479756F632CB /* Pods-PgyerUpdate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PgyerUpdate.release.xcconfig"; path = "Target Support Files/Pods-PgyerUpdate/Pods-PgyerUpdate.release.xcconfig"; sourceTree = "<group>"; };
+		283F4F69236A8A190094A4B3 /* Pgyer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pgyer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		283F4F6C236A8A190094A4B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		283F4F6E236A8A190094A4B3 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		283F4F70236A8A1A0094A4B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		283F4F73236A8A1A0094A4B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		283F4F75236A8A1A0094A4B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		283F4F76236A8A1A0094A4B3 /* Pgyer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pgyer.entitlements; sourceTree = "<group>"; };
+		287D72DA236AB911003919DD /* APIWechatTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIWechatTarget.swift; sourceTree = "<group>"; };
+		287D72DC236AC607003919DD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		287D72DD236B1125003919DD /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		287D72DF236B1244003919DD /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		287D72E1236B12C3003919DD /* MainKeyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainKeyController.swift; sourceTree = "<group>"; };
+		28A00D0A236A9DC3009F443B /* DragContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragContainer.swift; sourceTree = "<group>"; };
+		28A00D0C236A9DEA009F443B /* FileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileInfo.swift; sourceTree = "<group>"; };
+		28A00D0E236A9E0F009F443B /* PasteboardTypeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasteboardTypeExtension.swift; sourceTree = "<group>"; };
+		28A00D11236A9E4A009F443B /* Formator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formator.swift; sourceTree = "<group>"; };
+		28A00D12236A9E4A009F443B /* IOHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IOHelper.swift; sourceTree = "<group>"; };
+		28A00D16236AA1B7009F443B /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28A00D18236AA1FA009F443B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		28A00D1A236AAA53009F443B /* Pgyer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pgyer.swift; sourceTree = "<group>"; };
+		28A00D24236AABB0009F443B /* APIPgyerTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIPgyerTarget.swift; sourceTree = "<group>"; };
+		28A00D2F236AABB0009F443B /* APITimeoutPlugin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APITimeoutPlugin.swift; sourceTree = "<group>"; };
+		28A00D32236AABB0009F443B /* APILoad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APILoad.swift; sourceTree = "<group>"; };
+		28A00D34236AABB0009F443B /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		28A00D35236AABB0009F443B /* APIResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		28A00D36236AABB0009F443B /* APICancellableWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APICancellableWrapper.swift; sourceTree = "<group>"; };
+		28A00D37236AABB0009F443B /* APIOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIOption.swift; sourceTree = "<group>"; };
+		28A00D38236AABB0009F443B /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		28A00D51236AACC4009F443B /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		28A00D58236AB286009F443B /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		28B6374B236BDFF100C7210D /* Analysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analysis.swift; sourceTree = "<group>"; };
+		28B6374F236C082100C7210D /* MainPrepareController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPrepareController.swift; sourceTree = "<group>"; };
+		28B63751236C087C00C7210D /* PrepareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareView.swift; sourceTree = "<group>"; };
+		28B63753236C11F300C7210D /* MainWechatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWechatController.swift; sourceTree = "<group>"; };
+		28B63755236C169700C7210D /* Wechat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wechat.swift; sourceTree = "<group>"; };
+		28B63757236C315700C7210D /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		B780C7F993B69319A292C38C /* Pods_Pgyer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pgyer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3B417FD225866F26A8E45D5 /* Pods-PgyerUpdate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PgyerUpdate.debug.xcconfig"; path = "Target Support Files/Pods-PgyerUpdate/Pods-PgyerUpdate.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		283F4F66236A8A190094A4B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28A00D59236AB286009F443B /* NetworkExtension.framework in Frameworks */,
+				87937B8A0069C56001B6619D /* Pods_Pgyer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		071CB6BC43A271D64863E2B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3B417FD225866F26A8E45D5 /* Pods-PgyerUpdate.debug.xcconfig */,
+				1D075C46A31D479756F632CB /* Pods-PgyerUpdate.release.xcconfig */,
+				04823A8183EB9F80C2A647A7 /* Pods-Pgyer.debug.xcconfig */,
+				09DCF93147B488F9B6699514 /* Pods-Pgyer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		283F4F60236A8A190094A4B3 = {
+			isa = PBXGroup;
+			children = (
+				283F4F6B236A8A190094A4B3 /* Pgyer */,
+				283F4F6A236A8A190094A4B3 /* Products */,
+				071CB6BC43A271D64863E2B0 /* Pods */,
+				94461DA4732E74FC3298125D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		283F4F6A236A8A190094A4B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				283F4F69236A8A190094A4B3 /* Pgyer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		283F4F6B236A8A190094A4B3 /* Pgyer */ = {
+			isa = PBXGroup;
+			children = (
+				283F4F6C236A8A190094A4B3 /* AppDelegate.swift */,
+				28A00D1A236AAA53009F443B /* Pgyer.swift */,
+				28B63755236C169700C7210D /* Wechat.swift */,
+				28B63778236C3E3500C7210D /* Storyboard */,
+				28B63777236C3E0800C7210D /* Model */,
+				28A00D55236AB163009F443B /* Config */,
+				28A00D1C236AABB0009F443B /* API */,
+				28A00D15236AA176009F443B /* Controller */,
+				28A00D10236A9E3F009F443B /* Utils */,
+				28A00D09236A9DBB009F443B /* Views */,
+				28B63775236C3DAA00C7210D /* Resources */,
+				28A00D0E236A9E0F009F443B /* PasteboardTypeExtension.swift */,
+			);
+			path = Pgyer;
+			sourceTree = "<group>";
+		};
+		28A00D09236A9DBB009F443B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				28A00D0A236A9DC3009F443B /* DragContainer.swift */,
+				28A00D18236AA1FA009F443B /* MainView.swift */,
+				28B63751236C087C00C7210D /* PrepareView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		28A00D10236A9E3F009F443B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				287D72DF236B1244003919DD /* Storyboard.swift */,
+				28A00D11236A9E4A009F443B /* Formator.swift */,
+				28A00D12236A9E4A009F443B /* IOHelper.swift */,
+				28B6374B236BDFF100C7210D /* Analysis.swift */,
+				28B63757236C315700C7210D /* Extension.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		28A00D15236AA176009F443B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				28A00D16236AA1B7009F443B /* ViewController.swift */,
+				283F4F6E236A8A190094A4B3 /* MainViewController.swift */,
+				287D72DD236B1125003919DD /* MainWindowController.swift */,
+				287D72E1236B12C3003919DD /* MainKeyController.swift */,
+				28B6374F236C082100C7210D /* MainPrepareController.swift */,
+				28B63753236C11F300C7210D /* MainWechatController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		28A00D1C236AABB0009F443B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				28A00D1F236AABB0009F443B /* Target */,
+				28A00D2E236AABB0009F443B /* Plugin */,
+				28A00D32236AABB0009F443B /* APILoad.swift */,
+				28A00D33236AABB0009F443B /* Model */,
+				28A00D38236AABB0009F443B /* API.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		28A00D1F236AABB0009F443B /* Target */ = {
+			isa = PBXGroup;
+			children = (
+				28A00D24236AABB0009F443B /* APIPgyerTarget.swift */,
+				287D72DA236AB911003919DD /* APIWechatTarget.swift */,
+			);
+			path = Target;
+			sourceTree = "<group>";
+		};
+		28A00D2E236AABB0009F443B /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				28A00D2F236AABB0009F443B /* APITimeoutPlugin.swift */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		28A00D33236AABB0009F443B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28A00D34236AABB0009F443B /* APIError.swift */,
+				28A00D35236AABB0009F443B /* APIResult.swift */,
+				28A00D36236AABB0009F443B /* APICancellableWrapper.swift */,
+				28A00D51236AACC4009F443B /* Result.swift */,
+				28A00D37236AABB0009F443B /* APIOption.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28A00D55236AB163009F443B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		28B63775236C3DAA00C7210D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				283F4F70236A8A1A0094A4B3 /* Assets.xcassets */,
+				283F4F75236A8A1A0094A4B3 /* Info.plist */,
+				283F4F76236A8A1A0094A4B3 /* Pgyer.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		28B63777236C3E0800C7210D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				28A00D0C236A9DEA009F443B /* FileInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		28B63778236C3E3500C7210D /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				283F4F72236A8A1A0094A4B3 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		94461DA4732E74FC3298125D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28A00D58236AB286009F443B /* NetworkExtension.framework */,
+				B780C7F993B69319A292C38C /* Pods_Pgyer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		283F4F68236A8A190094A4B3 /* Pgyer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 283F4F79236A8A1A0094A4B3 /* Build configuration list for PBXNativeTarget "Pgyer" */;
+			buildPhases = (
+				EB6C83E6C52505799BAF81E4 /* [CP] Check Pods Manifest.lock */,
+				283F4F65236A8A190094A4B3 /* Sources */,
+				283F4F66236A8A190094A4B3 /* Frameworks */,
+				283F4F67236A8A190094A4B3 /* Resources */,
+				79ADAC61BEA377A8D7B48305 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pgyer;
+			productName = PgyerUpdate;
+			productReference = 283F4F69236A8A190094A4B3 /* Pgyer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		283F4F61236A8A190094A4B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "方林威";
+				TargetAttributes = {
+					283F4F68236A8A190094A4B3 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 283F4F64236A8A190094A4B3 /* Build configuration list for PBXProject "Pgyer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 283F4F60236A8A190094A4B3;
+			productRefGroup = 283F4F6A236A8A190094A4B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				283F4F68236A8A190094A4B3 /* Pgyer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		283F4F67236A8A190094A4B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				283F4F71236A8A1A0094A4B3 /* Assets.xcassets in Resources */,
+				283F4F74236A8A1A0094A4B3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		79ADAC61BEA377A8D7B48305 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pgyer/Pods-Pgyer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pgyer/Pods-Pgyer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pgyer/Pods-Pgyer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB6C83E6C52505799BAF81E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pgyer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		283F4F65236A8A190094A4B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				287D72DB236AB911003919DD /* APIWechatTarget.swift in Sources */,
+				28A00D4B236AABB0009F443B /* APILoad.swift in Sources */,
+				28A00D0F236A9E0F009F443B /* PasteboardTypeExtension.swift in Sources */,
+				28A00D52236AACC4009F443B /* Result.swift in Sources */,
+				28A00D19236AA1FA009F443B /* MainView.swift in Sources */,
+				28B63758236C315700C7210D /* Extension.swift in Sources */,
+				28A00D14236A9E4A009F443B /* IOHelper.swift in Sources */,
+				28A00D3E236AABB0009F443B /* APIPgyerTarget.swift in Sources */,
+				28A00D48236AABB0009F443B /* APITimeoutPlugin.swift in Sources */,
+				28B63750236C082100C7210D /* MainPrepareController.swift in Sources */,
+				287D72DE236B1125003919DD /* MainWindowController.swift in Sources */,
+				28A00D1B236AAA53009F443B /* Pgyer.swift in Sources */,
+				28B63756236C169700C7210D /* Wechat.swift in Sources */,
+				28A00D13236A9E4A009F443B /* Formator.swift in Sources */,
+				283F4F6F236A8A190094A4B3 /* MainViewController.swift in Sources */,
+				287D72E0236B1244003919DD /* Storyboard.swift in Sources */,
+				28B6374C236BDFF100C7210D /* Analysis.swift in Sources */,
+				28A00D0D236A9DEA009F443B /* FileInfo.swift in Sources */,
+				283F4F6D236A8A190094A4B3 /* AppDelegate.swift in Sources */,
+				28A00D4E236AABB0009F443B /* APICancellableWrapper.swift in Sources */,
+				28B63752236C087C00C7210D /* PrepareView.swift in Sources */,
+				28A00D4C236AABB0009F443B /* APIError.swift in Sources */,
+				28A00D17236AA1B7009F443B /* ViewController.swift in Sources */,
+				28A00D4D236AABB0009F443B /* APIResult.swift in Sources */,
+				28B63754236C11F300C7210D /* MainWechatController.swift in Sources */,
+				28A00D4F236AABB0009F443B /* APIOption.swift in Sources */,
+				287D72E2236B12C3003919DD /* MainKeyController.swift in Sources */,
+				28A00D0B236A9DC3009F443B /* DragContainer.swift in Sources */,
+				28A00D50236AABB0009F443B /* API.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		283F4F72236A8A1A0094A4B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				283F4F73236A8A1A0094A4B3 /* Base */,
+				287D72DC236AC607003919DD /* zh-Hans */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		283F4F77236A8A1A0094A4B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		283F4F78236A8A1A0094A4B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		283F4F7A236A8A1A0094A4B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04823A8183EB9F80C2A647A7 /* Pods-Pgyer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pgyer/Resources/Pgyer.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B9D8DJR5J5;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = Pgyer/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-312312.Pgyer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		283F4F7B236A8A1A0094A4B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09DCF93147B488F9B6699514 /* Pods-Pgyer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pgyer/Resources/Pgyer.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B9D8DJR5J5;
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = Pgyer/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "-312312.Pgyer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		283F4F64236A8A190094A4B3 /* Build configuration list for PBXProject "Pgyer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				283F4F77236A8A1A0094A4B3 /* Debug */,
+				283F4F78236A8A1A0094A4B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		283F4F79236A8A1A0094A4B3 /* Build configuration list for PBXNativeTarget "Pgyer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				283F4F7A236A8A1A0094A4B3 /* Debug */,
+				283F4F7B236A8A1A0094A4B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 283F4F61236A8A190094A4B3 /* Project object */;
+}
