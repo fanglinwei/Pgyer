@@ -9,7 +9,7 @@
         <!--Main Key Controller-->
         <scene sceneID="eok-x3-rY3">
             <objects>
-                <viewController storyboardIdentifier="MainKeyController" id="5oj-11-Ebr" customClass="MainKeyController" customModule="PgyerUpdate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainKeyController" id="5oj-11-Ebr" customClass="MainKeyController" customModule="Pgyer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="e3W-YR-N9L">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -33,8 +33,8 @@
         <!--Main Prepare Controller-->
         <scene sceneID="2lR-Iz-vaP">
             <objects>
-                <viewController storyboardIdentifier="MainPrepareController" id="UcA-eY-M84" customClass="MainPrepareController" customModule="PgyerUpdate" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="0n2-I8-zeL" customClass="PrepareView" customModule="PgyerUpdate" customModuleProvider="target">
+                <viewController storyboardIdentifier="MainPrepareController" id="UcA-eY-M84" customClass="MainPrepareController" customModule="Pgyer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="0n2-I8-zeL" customClass="PrepareView" customModule="Pgyer" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -186,17 +186,17 @@
                                 </constraints>
                                 <buttonCell key="cell" type="push" title="上传" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NvX-N0-5Tl">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="uploadAction:" target="UcA-eY-M84" id="hQy-rm-P9y"/>
                                 </connections>
                             </button>
                             <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="15" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vQ9-BA-ETk">
-                                <rect key="frame" x="0.0" y="169" width="560" height="255"/>
+                                <rect key="frame" x="0.0" y="138" width="560" height="286"/>
                                 <subviews>
                                     <stackView distribution="fill" orientation="vertical" alignment="trailing" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" translatesAutoresizingMaskIntoConstraints="NO" id="s5d-7u-4xg">
-                                        <rect key="frame" x="0.0" y="213" width="145" height="42"/>
+                                        <rect key="frame" x="0.0" y="244" width="145" height="42"/>
                                         <subviews>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ds1-Q5-vgK">
                                                 <rect key="frame" x="89" y="26" width="58" height="16"/>
@@ -228,7 +228,7 @@
                                         </customSpacing>
                                     </stackView>
                                     <stackView distribution="fill" orientation="vertical" alignment="leading" spacing="10" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yCG-Mt-Ypz">
-                                        <rect key="frame" x="160" y="0.0" width="400" height="255"/>
+                                        <rect key="frame" x="160" y="31" width="400" height="255"/>
                                         <subviews>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rgk-2a-Bao">
                                                 <rect key="frame" x="-2" y="239" width="36" height="16"/>
@@ -242,7 +242,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="400" height="229"/>
                                                 <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="UnP-Nz-lYp">
                                                     <rect key="frame" x="0.0" y="0.0" width="400" height="229"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
                                                         <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="oVP-N0-06Y">
                                                             <rect key="frame" x="0.0" y="0.0" width="400" height="229"/>
@@ -296,16 +296,6 @@
                             <progressIndicator wantsLayer="YES" maxValue="1" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="RLC-wy-pYu">
                                 <rect key="frame" x="30" y="79" width="540" height="20"/>
                             </progressIndicator>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tj5-R0-bVT">
-                                <rect key="frame" x="62" y="121" width="94" height="32"/>
-                                <buttonCell key="cell" type="push" title="企业微信" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="DyJ-e9-9oP">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="titleBar"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="wechatAction:" target="UcA-eY-M84" id="JXE-uD-WJL"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="VXo-Pd-dxx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="0n2-I8-zeL" secondAttribute="leading" constant="20" symbolic="YES" id="0fl-Iw-vQZ"/>
@@ -313,10 +303,7 @@
                             <constraint firstAttribute="trailing" secondItem="vQ9-BA-ETk" secondAttribute="trailing" constant="40" id="3M3-Zo-4Q5"/>
                             <constraint firstItem="sMl-Sf-mLl" firstAttribute="top" secondItem="mhv-XV-atL" secondAttribute="top" id="5DK-wf-mUp"/>
                             <constraint firstItem="RLC-wy-pYu" firstAttribute="leading" secondItem="0n2-I8-zeL" secondAttribute="leading" constant="30" id="5K8-WM-j9P"/>
-                            <constraint firstItem="tj5-R0-bVT" firstAttribute="top" secondItem="vQ9-BA-ETk" secondAttribute="bottom" constant="20" id="5SV-kp-uk2"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tj5-R0-bVT" secondAttribute="trailing" constant="20" symbolic="YES" id="7xE-xd-0oL"/>
                             <constraint firstAttribute="bottom" secondItem="VXo-Pd-dxx" secondAttribute="bottom" constant="20" id="CfE-N9-9if"/>
-                            <constraint firstItem="tj5-R0-bVT" firstAttribute="leading" secondItem="0n2-I8-zeL" secondAttribute="leading" constant="68" id="GUl-E5-pPY"/>
                             <constraint firstItem="sMl-Sf-mLl" firstAttribute="leading" secondItem="mhv-XV-atL" secondAttribute="trailing" id="Qpq-OO-E4w"/>
                             <constraint firstItem="LNb-x9-HHM" firstAttribute="top" secondItem="mhv-XV-atL" secondAttribute="bottom" constant="12" id="Z13-Ob-AiM"/>
                             <constraint firstAttribute="trailing" secondItem="LNb-x9-HHM" secondAttribute="trailing" constant="40" id="bbx-mH-I47"/>
@@ -326,7 +313,7 @@
                             <constraint firstAttribute="trailing" secondItem="VXo-Pd-dxx" secondAttribute="trailing" constant="20" id="mxi-4X-cCx"/>
                             <constraint firstItem="VXo-Pd-dxx" firstAttribute="top" secondItem="RLC-wy-pYu" secondAttribute="bottom" constant="30" id="sHN-9p-Y8P"/>
                             <constraint firstItem="vQ9-BA-ETk" firstAttribute="top" secondItem="LNb-x9-HHM" secondAttribute="bottom" constant="23" id="w1b-zX-a4t"/>
-                            <constraint firstItem="RLC-wy-pYu" firstAttribute="top" secondItem="tj5-R0-bVT" secondAttribute="bottom" constant="30" id="x1O-F5-DU9"/>
+                            <constraint firstItem="RLC-wy-pYu" firstAttribute="top" secondItem="vQ9-BA-ETk" secondAttribute="bottom" constant="40" id="yXv-ZU-tma"/>
                             <constraint firstItem="LNb-x9-HHM" firstAttribute="leading" secondItem="0n2-I8-zeL" secondAttribute="leading" constant="40" id="zaN-kr-LY0"/>
                         </constraints>
                         <connections>
@@ -345,73 +332,80 @@
             </objects>
             <point key="canvasLocation" x="1300.5" y="-60"/>
         </scene>
-        <!--企业微信机器人设置-->
+        <!--选择机器人发送到企业微信-->
         <scene sceneID="QWH-07-FvF">
             <objects>
-                <viewController title="企业微信机器人设置" storyboardIdentifier="MainWechatController" id="oS2-s0-4a9" customClass="MainWechatController" customModule="PgyerUpdate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="选择机器人发送到企业微信" storyboardIdentifier="MainWechatController" id="oS2-s0-4a9" customClass="MainWechatController" customModule="Pgyer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="f8I-uV-3TP">
                         <rect key="frame" x="0.0" y="0.0" width="469" height="102"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nII-X6-2gr">
-                                <rect key="frame" x="83" y="53" width="29" height="16"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="key:" id="mZv-1c-duK">
-                                    <font key="font" usesAppearanceFont="YES"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="N9W-nY-Tuc">
-                                <rect key="frame" x="120" y="50" width="329" height="22"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" title="0a3fdd95-47cd-4dd2-9790-bc2f7efd2cb9" placeholderString="企业微信机器人唯一标识" drawsBackground="YES" id="cAj-ov-od4">
-                                    <font key="font" metaFont="titleBar"/>
-                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oal-VB-Kpz">
-                                <rect key="frame" x="282" y="18" width="89" height="18"/>
+                                <rect key="frame" x="282" y="18" width="89" height="17"/>
                                 <buttonCell key="cell" type="check" title="发送二维码" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="3nR-Fn-DKV">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EiJ-J6-OZ7">
                                 <rect key="frame" x="388" y="9" width="67" height="32"/>
                                 <buttonCell key="cell" type="push" title="确定" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KKP-d9-KcF">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="titleBar"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="doneAction:" target="oS2-s0-4a9" id="JUe-7K-HEp"/>
                                 </connections>
                             </button>
+                            <stackView distribution="equalSpacing" orientation="horizontal" alignment="top" spacing="15" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TS0-7P-CFH">
+                                <rect key="frame" x="30" y="44" width="145" height="14"/>
+                                <subviews>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JGo-7V-63h">
+                                        <rect key="frame" x="-2" y="-2" width="62" height="18"/>
+                                        <buttonCell key="cell" type="check" title="专业版" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="GHb-rL-IGP">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="JHS-b6-8On">
+                                        <rect key="frame" x="71" y="-2" width="76" height="18"/>
+                                        <buttonCell key="cell" type="check" title="雅思单词" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="Vz4-4F-ihQ">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                </subviews>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="EiJ-J6-OZ7" firstAttribute="trailing" secondItem="N9W-nY-Tuc" secondAttribute="trailing" id="2G5-2h-0vl"/>
-                            <constraint firstAttribute="trailing" secondItem="N9W-nY-Tuc" secondAttribute="trailing" constant="20" id="3hI-52-nPo"/>
+                            <constraint firstItem="oal-VB-Kpz" firstAttribute="baseline" secondItem="EiJ-J6-OZ7" secondAttribute="firstBaseline" id="0fc-jT-hCs"/>
                             <constraint firstItem="oal-VB-Kpz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="f8I-uV-3TP" secondAttribute="leading" constant="20" symbolic="YES" id="5ZD-ed-Ybg"/>
                             <constraint firstItem="EiJ-J6-OZ7" firstAttribute="leading" secondItem="oal-VB-Kpz" secondAttribute="trailing" constant="25" id="7KD-lu-WnD"/>
-                            <constraint firstItem="N9W-nY-Tuc" firstAttribute="baseline" secondItem="nII-X6-2gr" secondAttribute="baseline" id="EcZ-lZ-CtS"/>
-                            <constraint firstItem="N9W-nY-Tuc" firstAttribute="baseline" secondItem="nII-X6-2gr" secondAttribute="firstBaseline" id="Jdd-CZ-FmU"/>
-                            <constraint firstItem="EiJ-J6-OZ7" firstAttribute="top" secondItem="N9W-nY-Tuc" secondAttribute="bottom" constant="13" id="O9G-1U-vuc"/>
+                            <constraint firstAttribute="trailing" secondItem="EiJ-J6-OZ7" secondAttribute="trailing" constant="20" symbolic="YES" id="Ehw-z4-v3w"/>
+                            <constraint firstItem="TS0-7P-CFH" firstAttribute="centerY" secondItem="f8I-uV-3TP" secondAttribute="centerY" id="HxM-uM-feF"/>
+                            <constraint firstItem="TS0-7P-CFH" firstAttribute="leading" secondItem="f8I-uV-3TP" secondAttribute="leading" constant="30" id="NZ8-M5-J1s"/>
                             <constraint firstItem="oal-VB-Kpz" firstAttribute="centerY" secondItem="EiJ-J6-OZ7" secondAttribute="centerY" id="PR4-OO-0Ou"/>
-                            <constraint firstItem="N9W-nY-Tuc" firstAttribute="leading" secondItem="nII-X6-2gr" secondAttribute="trailing" constant="10" id="VNg-r8-6BJ"/>
-                            <constraint firstItem="N9W-nY-Tuc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="nII-X6-2gr" secondAttribute="trailing" constant="8" symbolic="YES" id="biG-Qo-9pR"/>
-                            <constraint firstItem="nII-X6-2gr" firstAttribute="centerY" secondItem="N9W-nY-Tuc" secondAttribute="centerY" id="ifa-ak-EOu"/>
-                            <constraint firstItem="nII-X6-2gr" firstAttribute="leading" secondItem="f8I-uV-3TP" secondAttribute="leading" constant="85" id="jRF-ic-6Qa"/>
-                            <constraint firstItem="N9W-nY-Tuc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="f8I-uV-3TP" secondAttribute="leading" symbolic="YES" id="rHP-u3-lWD"/>
-                            <constraint firstItem="N9W-nY-Tuc" firstAttribute="top" secondItem="f8I-uV-3TP" secondAttribute="top" constant="30" id="zdH-5C-kEx"/>
+                            <constraint firstAttribute="bottom" secondItem="oal-VB-Kpz" secondAttribute="bottom" constant="20" symbolic="YES" id="RkP-cl-wkt"/>
+                            <constraint firstItem="oal-VB-Kpz" firstAttribute="baseline" secondItem="EiJ-J6-OZ7" secondAttribute="baseline" id="YVu-it-i7X"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="keyTextField" destination="N9W-nY-Tuc" id="O9l-Rq-n7d"/>
+                        <outlet property="proBox" destination="JGo-7V-63h" id="xHh-Ak-WHn"/>
                         <outlet property="qrCodeBox" destination="oal-VB-Kpz" id="krY-wj-c8W"/>
+                        <outlet property="wordBox" destination="JHS-b6-8On" id="BH2-I4-exO"/>
                     </connections>
                 </viewController>
                 <customObject id="rK1-j8-K5Z" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1897" y="-309"/>
+            <point key="canvasLocation" x="1896.5" y="-309"/>
         </scene>
         <!--Application-->
         <scene sceneID="JPo-4y-FX3">
@@ -876,7 +870,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="PgyerUpdate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Pgyer" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -885,7 +879,7 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" customClass="MainWindowController" customModule="PgyerUpdate" customModuleProvider="target" sceneMemberID="viewController">
+                <windowController id="B8D-0N-5wS" customClass="MainWindowController" customModule="Pgyer" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -916,8 +910,8 @@
         <!--Main View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController storyboardIdentifier="MainViewController" id="XfG-lQ-9wD" customClass="MainViewController" customModule="PgyerUpdate" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl" customClass="MainView" customModule="PgyerUpdate" customModuleProvider="target">
+                <viewController storyboardIdentifier="MainViewController" id="XfG-lQ-9wD" customClass="MainViewController" customModule="Pgyer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="m2S-Jp-Qdl" customClass="MainView" customModule="Pgyer" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="500"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -925,7 +919,7 @@
                                 <rect key="frame" x="224" y="234" width="32" height="32"/>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSFolder" id="j7b-aJ-mfX"/>
                             </imageView>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="eRa-Rb-tbI" customClass="DragContainer" customModule="PgyerUpdate" customModuleProvider="target">
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="eRa-Rb-tbI" customClass="DragContainer" customModule="Pgyer" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="480" height="500"/>
                             </customView>
                         </subviews>

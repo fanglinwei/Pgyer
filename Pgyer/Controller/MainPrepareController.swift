@@ -17,6 +17,8 @@ class MainPrepareController: ViewController<PrepareView> {
     var date: Date?
     var path: URL?
     
+    var build: Build?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
@@ -26,16 +28,10 @@ class MainPrepareController: ViewController<PrepareView> {
     }
     
     private func setup() {
-        Wechat.addRobot(default: bundleId)
         container.nameLabel.stringValue = name
         container.identiflerLabel.stringValue = bundleId
         container.versionLabel.stringValue = version
         title = name
-    }
-    
-    @IBAction func wechatAction(_ sender: Any) {
-        let controller =  MainWechatController.instance(bundleId)
-        presentAsModalWindow(controller)
     }
     
     @IBAction func uploadAction(_ sender: Any) {
@@ -51,12 +47,12 @@ class MainPrepareController: ViewController<PrepareView> {
             [weak self] (result: API.Result<Build>) in
             guard let self = self else { return }
             guard let value = result.value else { return }
-            self.sendWetch(value)
+            self.build = value
             
-            // alert
-            let alert = NSAlert()
-            alert.messageText = "上传成功"
-            alert.runModal()
+            // 弹出企业微信
+            let controller =  MainWechatController.instance(self.bundleId)
+            controller.delegate = self
+            self.presentAsModalWindow(controller)
         }
     }
     
@@ -96,10 +92,7 @@ extension MainPrepareController {
     }
     
     // 关联企业微信
-    private func sendWetch(_ build: Build) {
-        guard let robot = Wechat.robots.first(where: { $0.bundleId == bundleId }) else {
-            return
-        }
+    private func sendWetch(_ build: Build, robot: Wechat.Robot) {
         // 发信息
         let url = "http://www.pgyer.com/" + build.buildShortcutUrl
         let content = container.updateDescTextView.string + "\n安装地址: \(url)"
@@ -119,6 +112,13 @@ extension MainPrepareController {
     }
 }
 
+extension MainPrepareController: MainWechatControllerDelegate {
+    
+    func done(robots: [Wechat.Robot]) {
+        guard let build = build else { return }
+        robots.forEach { sendWetch(build, robot: $0) }
+    }
+}
 
 extension MainPrepareController {
     
@@ -139,4 +139,3 @@ extension MainPrepareController {
         let buildUpdateDescription: String
     }
 }
-
