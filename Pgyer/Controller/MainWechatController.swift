@@ -46,7 +46,7 @@ class MainWechatController: NSViewController {
         
         let isQR = qrCodeBox.state == .on
         
-        if proBox.state == .on {
+        if wordBox.state == .on {
             let robot = Wechat.Robot(key: Wechat.Robot.Mode.word.key, isQR: isQR)
             robots.append(robot)
         }
