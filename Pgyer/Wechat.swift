@@ -13,7 +13,7 @@ enum Wechat {
     struct Robot: Codable, Equatable {
         var key: String
         var isQR: Bool
-        let mobile: [String] = ["15910717228", "15010463860"]
+        let mobile: [String] = ["15910717228", "15010463860", "15665018938"]
         
         enum Mode {
             case word

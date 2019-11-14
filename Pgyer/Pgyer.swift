@@ -14,6 +14,8 @@ enum Pgyer {
     
     static var userKey = "e8db90f09703e5a141046fe115d3dfe0"
     
+    static var password = "123456"
+    
     /// ipa状态
     enum State {
         /// 已存在文件
@@ -28,8 +30,8 @@ enum Pgyer {
 extension Pgyer {
     
     struct Upload {
-        let installType: Int = 1    //应用安装方式，值为(1,2,3，4)。1：公开，2：密码安装，3：邀请安装，4：回答问题安装。默认为1公开
-        let password: String = ""   //设置App安装密码，如果不想设置密码，请传空字符串，或不传。
+        let installType: Int = 2    //应用安装方式，值为(2,3)。2：密码安装，3：邀请安装
+        let password: String = Pgyer.password   //
         let description: String     //版本更新描述，请传空字符串，或不传。
         let file: URL
         

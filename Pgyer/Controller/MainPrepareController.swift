@@ -95,7 +95,12 @@ extension MainPrepareController {
     private func sendWetch(_ build: Build, robot: Wechat.Robot) {
         // 发信息
         let url = "http://www.pgyer.com/" + build.buildShortcutUrl
-        let content = container.updateDescTextView.string + "\n安装地址: \(url)"
+        let content = """
+            \(container.updateDescTextView.string)
+            \n
+            安装地址: \(url)
+            安装密码: \(Pgyer.password)
+            """
         API.wechat.load(.sendText(key: robot.key, content: content, at: robot.mobile))
     
         // 发图片
