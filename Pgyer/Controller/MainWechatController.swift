@@ -16,8 +16,7 @@ class MainWechatController: NSViewController {
     
     weak var delegate: MainWechatControllerDelegate?
 
-    @IBOutlet weak var proBox: NSButton!
-    @IBOutlet weak var wordBox: NSButton!
+    @IBOutlet weak var box: NSButton!
     @IBOutlet weak var qrCodeBox: NSButton!
     
     private var bundleId: String = ""
@@ -27,34 +26,15 @@ class MainWechatController: NSViewController {
     }
     
     private func setup() {
-        proBox.state = .off
-        wordBox.state = .off
-        switch bundleId {
-        case "com.todoen.word":
-            wordBox.state = .on
-            
-        case "com.todoen.ielts.main":
-            proBox.state = .on
-            
-        default:
-            break
-        }
+        box.state = .on
     }
     
     @IBAction func doneAction(_ sender: Any) {
         var robots: [Wechat.Robot] = []
         
         let isQR = qrCodeBox.state == .on
-        
-        if wordBox.state == .on {
-            let robot = Wechat.Robot(key: Wechat.Robot.Mode.word.key, isQR: isQR)
-            robots.append(robot)
-        }
-        
-        if proBox.state == .on {
-            let robot = Wechat.Robot(key: Wechat.Robot.Mode.pro.key, isQR: isQR)
-            robots.append(robot)
-        }
+        let robot = Wechat.Robot(key: "0a3fdd95-47cd-4dd2-9790-bc2f7efd2cb9", isQR: isQR)
+        robots.append(robot)
         
         delegate?.done(robots: robots)
         dismiss(self)

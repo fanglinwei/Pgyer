@@ -14,17 +14,5 @@ enum Wechat {
         var key: String
         var isQR: Bool
         let mobile: [String] = ["15910717228", "15010463860", "15665018938"]
-        
-        enum Mode {
-            case word
-            case pro
-            
-            var key: String {
-                switch self {
-                case .word:     return "3eb6a8d8-217a-4a2a-820d-b9da0eb46941"
-                case .pro:      return "0a3fdd95-47cd-4dd2-9790-bc2f7efd2cb9"
-                }
-            }
-        }
     }
 }
