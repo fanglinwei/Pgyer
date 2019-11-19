@@ -8,6 +8,7 @@
 
 import Cocoa
 import Kingfisher
+import CryptoSwift
 
 class MainPrepareController: ViewController<PrepareView> {
     
@@ -111,7 +112,7 @@ extension MainPrepareController {
                         return
                 }
                 let base64 = data.base64EncodedString()
-                API.wechat.load(.sendImage(key: robot.key, content: base64, md5: data.md5))
+                API.wechat.load(.sendImage(key: robot.key, content: base64, md5: data.md5().toHexString()))
             }
         }
     }

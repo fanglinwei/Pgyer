@@ -16,7 +16,6 @@ extension API {
         #else
         return [
             NetworkLoggerPlugin(verbose: false),
-            APIUploadPlugin(),
             APITimeoutPlugin()
         ]
         #endif

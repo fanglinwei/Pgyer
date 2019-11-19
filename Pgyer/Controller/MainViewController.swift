@@ -7,7 +7,7 @@
 //
 
 import Cocoa
-import Alamofire
+import Kingfisher
 
 class MainViewController: ViewController<MainView> {
 
@@ -36,7 +36,6 @@ extension MainViewController: DragContainerDelegate {
     }
     
     func draggingFileAccept(_ file: FileInfo) {
-        
         Analysis.look(with: file.path) { [weak self](result) in
             guard let self = self else { return }
             switch result {
