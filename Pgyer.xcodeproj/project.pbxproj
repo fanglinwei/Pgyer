@@ -142,7 +142,6 @@
 				28A00D10236A9E3F009F443B /* Utils */,
 				28A00D09236A9DBB009F443B /* Views */,
 				28B63775236C3DAA00C7210D /* Resources */,
-				28A00D0E236A9E0F009F443B /* PasteboardTypeExtension.swift */,
 			);
 			path = Pgyer;
 			sourceTree = "<group>";
@@ -164,6 +163,7 @@
 				28A00D11236A9E4A009F443B /* Formator.swift */,
 				28A00D12236A9E4A009F443B /* IOHelper.swift */,
 				28B6374B236BDFF100C7210D /* Analysis.swift */,
+				28A00D0E236A9E0F009F443B /* PasteboardTypeExtension.swift */,
 				28B63757236C315700C7210D /* Extension.swift */,
 			);
 			path = Utils;
@@ -548,18 +548,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Pgyer/Resources/Pgyer.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B9D8DJR5J5;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = Pgyer/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Pgyer.calm;
+				PRODUCT_BUNDLE_IDENTIFIER = io.hyperapp.XcodeCleaner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -571,18 +571,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Pgyer/Resources/Pgyer.entitlements;
-				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = B9D8DJR5J5;
-				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
 				INFOPLIST_FILE = Pgyer/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Pgyer.calm;
+				PRODUCT_BUNDLE_IDENTIFIER = io.hyperapp.XcodeCleaner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
