@@ -3,61 +3,61 @@
     {
       "size" : "16x16",
       "idiom" : "mac",
-      "filename" : "friesMacMicro_16pt.png",
+      "filename" : "蒲公英MacMicro_16pt.png",
       "scale" : "1x"
     },
     {
       "size" : "16x16",
       "idiom" : "mac",
-      "filename" : "friesMacMicro_16pt@2x.png",
+      "filename" : "蒲公英MacMicro_16pt@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "32x32",
       "idiom" : "mac",
-      "filename" : "friesMacSmall_32pt.png",
+      "filename" : "蒲公英MacSmall_32pt.png",
       "scale" : "1x"
     },
     {
       "size" : "32x32",
       "idiom" : "mac",
-      "filename" : "friesMacSmall_32pt@2x.png",
+      "filename" : "蒲公英MacSmall_32pt@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "128x128",
       "idiom" : "mac",
-      "filename" : "friesMacMedium_128pt.png",
+      "filename" : "蒲公英MacMedium_128pt.png",
       "scale" : "1x"
     },
     {
       "size" : "128x128",
       "idiom" : "mac",
-      "filename" : "friesMacMedium_128pt@2x.png",
+      "filename" : "蒲公英MacMedium_128pt@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "friesMacLarge_256pt.png",
+      "filename" : "蒲公英MacLarge_256pt.png",
       "scale" : "1x"
     },
     {
       "size" : "256x256",
       "idiom" : "mac",
-      "filename" : "friesMacLarge_256pt@2x.png",
+      "filename" : "蒲公英MacLarge_256pt@2x.png",
       "scale" : "2x"
     },
     {
       "size" : "512x512",
       "idiom" : "mac",
-      "filename" : "friesMacHuge_512pt.png",
+      "filename" : "蒲公英MacHuge_512pt.png",
       "scale" : "1x"
     },
     {
       "size" : "512x512",
       "idiom" : "mac",
-      "filename" : "friesMacHuge_512pt@2x.png",
+      "filename" : "蒲公英MacHuge_512pt@2x.png",
       "scale" : "2x"
     }
   ],

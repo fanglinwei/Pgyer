@@ -12,8 +12,6 @@ class MainWindowController: NSWindowController {
 	
 	override func windowDidLoad() {
 		super.windowDidLoad()
-        
-        
         contentViewController = MainViewController.instance()
 	}
 }

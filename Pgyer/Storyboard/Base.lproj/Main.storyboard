@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15505"/>
         <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
@@ -516,9 +516,6 @@
                                     <items>
                                         <menuItem title="推送配置" id="dRJ-4n-Yzg" userLabel="推送配置">
                                             <modifierMask key="keyEquivalentModifierMask"/>
-                                            <connections>
-                                                <segue destination="IUX-u7-sJi" kind="modal" id="rZ4-Jk-Ed2"/>
-                                            </connections>
                                         </menuItem>
                                     </items>
                                 </menu>
@@ -866,60 +863,74 @@
             </objects>
             <point key="canvasLocation" x="76" y="-17"/>
         </scene>
-        <!--Window Controller-->
-        <scene sceneID="R2V-B0-nI4">
-            <objects>
-                <windowController id="B8D-0N-5wS" customClass="MainWindowController" customModule="Pgyer" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
-                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
-                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
-                        <connections>
-                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
-                        </connections>
-                    </window>
-                </windowController>
-                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="75" y="250"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="BVu-fJ-T0V">
-            <objects>
-                <viewController id="IUX-u7-sJi" sceneMemberID="viewController">
-                    <view key="view" id="UKR-wN-CqI">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="497"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="mPa-NO-VXy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="601" y="333.5"/>
-        </scene>
         <!--Main View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController storyboardIdentifier="MainViewController" id="XfG-lQ-9wD" customClass="MainViewController" customModule="Pgyer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl" customClass="MainView" customModule="Pgyer" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="500"/>
+                        <rect key="frame" x="0.0" y="0.0" width="315" height="398"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VyS-2h-9gR">
-                                <rect key="frame" x="224" y="234" width="32" height="32"/>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSFolder" id="j7b-aJ-mfX"/>
-                            </imageView>
-                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="eRa-Rb-tbI" customClass="DragContainer" customModule="Pgyer" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="500"/>
-                            </customView>
+                            <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KRq-OA-fqE">
+                                <rect key="frame" x="0.0" y="0.0" width="315" height="398"/>
+                                <subviews>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="ifv-Dx-1eF">
+                                        <rect key="frame" x="0.0" y="38" width="295" height="360"/>
+                                        <subviews>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VyS-2h-9gR">
+                                                <rect key="frame" x="132" y="32" width="32" height="296"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="NSFolder" id="j7b-aJ-mfX"/>
+                                            </imageView>
+                                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="eRa-Rb-tbI" customClass="DragContainer" customModule="Pgyer" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="360"/>
+                                            </customView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="eRa-Rb-tbI" secondAttribute="trailing" id="0XY-6Q-Ptn"/>
+                                            <constraint firstItem="VyS-2h-9gR" firstAttribute="centerY" secondItem="ifv-Dx-1eF" secondAttribute="centerY" id="3wc-We-6fJ"/>
+                                            <constraint firstItem="VyS-2h-9gR" firstAttribute="centerX" secondItem="ifv-Dx-1eF" secondAttribute="centerX" id="Gg6-2q-tJL"/>
+                                            <constraint firstItem="eRa-Rb-tbI" firstAttribute="leading" secondItem="ifv-Dx-1eF" secondAttribute="leading" id="RoL-vs-1Ou"/>
+                                            <constraint firstItem="eRa-Rb-tbI" firstAttribute="top" secondItem="ifv-Dx-1eF" secondAttribute="top" id="T5O-YL-cF3"/>
+                                            <constraint firstItem="VyS-2h-9gR" firstAttribute="centerY" secondItem="eRa-Rb-tbI" secondAttribute="centerY" id="uuZ-Ww-SBo"/>
+                                            <constraint firstItem="VyS-2h-9gR" firstAttribute="top" secondItem="ifv-Dx-1eF" secondAttribute="top" constant="32" id="v0R-xd-918"/>
+                                        </constraints>
+                                    </customView>
+                                    <customView translatesAutoresizingMaskIntoConstraints="NO" id="AfQ-Fi-tno">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="30"/>
+                                        <subviews>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Mcv-ZU-kXT">
+                                                <rect key="frame" x="124" y="-2" width="67" height="32"/>
+                                                <buttonCell key="cell" type="push" title="退出" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Xbu-1C-GBw">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="qAction:" target="XfG-lQ-9wD" id="2aL-RU-AT5"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Mcv-ZU-kXT" firstAttribute="centerX" secondItem="AfQ-Fi-tno" secondAttribute="centerX" id="1ze-EE-Gfc"/>
+                                            <constraint firstItem="Mcv-ZU-kXT" firstAttribute="centerY" secondItem="AfQ-Fi-tno" secondAttribute="centerY" id="YD6-Cb-CKW"/>
+                                            <constraint firstAttribute="height" constant="30" id="vSb-mV-8rP"/>
+                                        </constraints>
+                                    </customView>
+                                </subviews>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="eRa-Rb-tbI" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="Hak-fP-S0f"/>
-                            <constraint firstAttribute="bottom" secondItem="eRa-Rb-tbI" secondAttribute="bottom" id="Ifa-Yj-UXl"/>
-                            <constraint firstAttribute="trailing" secondItem="eRa-Rb-tbI" secondAttribute="trailing" id="bcd-nR-NT3"/>
-                            <constraint firstItem="VyS-2h-9gR" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="oXD-zG-tcD"/>
-                            <constraint firstItem="eRa-Rb-tbI" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="vIi-kc-wIn"/>
-                            <constraint firstItem="VyS-2h-9gR" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="xXz-eo-UIV"/>
+                            <constraint firstItem="KRq-OA-fqE" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="4Wh-sm-u7x"/>
+                            <constraint firstItem="KRq-OA-fqE" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="6bF-aX-ipY"/>
+                            <constraint firstAttribute="bottom" secondItem="KRq-OA-fqE" secondAttribute="bottom" id="rNX-Ct-XwO"/>
+                            <constraint firstAttribute="trailing" secondItem="KRq-OA-fqE" secondAttribute="trailing" id="u1U-h4-qce"/>
                         </constraints>
                         <connections>
                             <outlet property="dragContainerView" destination="eRa-Rb-tbI" id="WBl-sA-oZl"/>
@@ -928,7 +939,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="802"/>
+            <point key="canvasLocation" x="-7.5" y="639"/>
         </scene>
     </scenes>
     <resources>

@@ -20,6 +20,10 @@ class MainViewController: ViewController<MainView> {
         container.dragContainerView.delegate = self
     }
     
+    @IBAction func qAction(_ sender: Any) {
+        NSApp.terminate(nil)
+    }
+    
     static func instance() -> Self {
         return StoryBoard.main.instance()
     }
