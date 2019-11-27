@@ -12,13 +12,15 @@ import CryptoSwift
 
 class MainPrepareController: ViewController<PrepareView> {
     
-    var name: String = ""
-    var bundleId: String = ""
-    var version: String = ""
-    var date: Date?
-    var path: URL?
+    private var name: String = ""
+    private var bundleId: String = ""
+    private var version: String = ""
+    private var date: Date?
+    private var path: URL?
     
-    var build: Build?
+    private var build: Build?
+    
+    private var cancelable: Cancellable?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,11 +42,14 @@ class MainPrepareController: ViewController<PrepareView> {
         // 开始上传
         let desc = container.updateDescTextView.string
         let upload = Pgyer.Upload(description: desc, file: path)
-        let options: [API.Option] = [.progress({ [weak self] progress in
+        let options: [API.Option] = [
+            .progress({ [weak self] progress in
             self?.container.progressView.doubleValue = progress
-        })]
+        }),
+            .single("upload")
+        ]
         
-        API.pgyer.load(.upload(upload), options: options) {
+        cancelable = API.pgyer.load(.upload(upload), options: options) {
             [weak self] (result: API.Result<Build>) in
             guard let self = self else { return }
             guard let value = result.value else { return }
@@ -74,6 +79,11 @@ class MainPrepareController: ViewController<PrepareView> {
     
     static func instance() -> Self {
         return StoryBoard.main.instance()
+    }
+    
+    deinit {
+        // 取消上传请求
+        cancelable?.cancel()
     }
 }
 
