@@ -11,6 +11,7 @@
 		283F4F6F236A8A190094A4B3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283F4F6E236A8A190094A4B3 /* MainViewController.swift */; };
 		283F4F71236A8A1A0094A4B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 283F4F70236A8A1A0094A4B3 /* Assets.xcassets */; };
 		283F4F74236A8A1A0094A4B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 283F4F72236A8A1A0094A4B3 /* Main.storyboard */; };
+		2840506D240CDD8200AF1609 /* APIFeishuTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2840506C240CDD8200AF1609 /* APIFeishuTarget.swift */; };
 		287D72DB236AB911003919DD /* APIWechatTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D72DA236AB911003919DD /* APIWechatTarget.swift */; };
 		287D72DE236B1125003919DD /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D72DD236B1125003919DD /* MainWindowController.swift */; };
 		287D72E0236B1244003919DD /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D72DF236B1244003919DD /* Storyboard.swift */; };
@@ -36,8 +37,8 @@
 		28B6374C236BDFF100C7210D /* Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B6374B236BDFF100C7210D /* Analysis.swift */; };
 		28B63750236C082100C7210D /* MainPrepareController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B6374F236C082100C7210D /* MainPrepareController.swift */; };
 		28B63752236C087C00C7210D /* PrepareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B63751236C087C00C7210D /* PrepareView.swift */; };
-		28B63754236C11F300C7210D /* MainWechatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B63753236C11F300C7210D /* MainWechatController.swift */; };
-		28B63756236C169700C7210D /* Wechat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B63755236C169700C7210D /* Wechat.swift */; };
+		28B63754236C11F300C7210D /* MainNoticeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B63753236C11F300C7210D /* MainNoticeController.swift */; };
+		28B63756236C169700C7210D /* Robot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B63755236C169700C7210D /* Robot.swift */; };
 		28B63758236C315700C7210D /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28B63757236C315700C7210D /* Extension.swift */; };
 		87937B8A0069C56001B6619D /* Pods_Pgyer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B780C7F993B69319A292C38C /* Pods_Pgyer.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 		283F4F73236A8A1A0094A4B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		283F4F75236A8A1A0094A4B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		283F4F76236A8A1A0094A4B3 /* Pgyer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pgyer.entitlements; sourceTree = "<group>"; };
+		2840506C240CDD8200AF1609 /* APIFeishuTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFeishuTarget.swift; sourceTree = "<group>"; };
 		287D72DA236AB911003919DD /* APIWechatTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIWechatTarget.swift; sourceTree = "<group>"; };
 		287D72DC236AC607003919DD /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		287D72DD236B1125003919DD /* MainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
@@ -79,8 +81,8 @@
 		28B6374B236BDFF100C7210D /* Analysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analysis.swift; sourceTree = "<group>"; };
 		28B6374F236C082100C7210D /* MainPrepareController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPrepareController.swift; sourceTree = "<group>"; };
 		28B63751236C087C00C7210D /* PrepareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareView.swift; sourceTree = "<group>"; };
-		28B63753236C11F300C7210D /* MainWechatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWechatController.swift; sourceTree = "<group>"; };
-		28B63755236C169700C7210D /* Wechat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wechat.swift; sourceTree = "<group>"; };
+		28B63753236C11F300C7210D /* MainNoticeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNoticeController.swift; sourceTree = "<group>"; };
+		28B63755236C169700C7210D /* Robot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Robot.swift; sourceTree = "<group>"; };
 		28B63757236C315700C7210D /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		B780C7F993B69319A292C38C /* Pods_Pgyer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pgyer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3B417FD225866F26A8E45D5 /* Pods-PgyerUpdate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PgyerUpdate.debug.xcconfig"; path = "Target Support Files/Pods-PgyerUpdate/Pods-PgyerUpdate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,7 +135,7 @@
 			children = (
 				283F4F6C236A8A190094A4B3 /* AppDelegate.swift */,
 				28A00D1A236AAA53009F443B /* Pgyer.swift */,
-				28B63755236C169700C7210D /* Wechat.swift */,
+				28B63755236C169700C7210D /* Robot.swift */,
 				28B63778236C3E3500C7210D /* Storyboard */,
 				28B63777236C3E0800C7210D /* Model */,
 				28A00D55236AB163009F443B /* Config */,
@@ -177,7 +179,7 @@
 				287D72DD236B1125003919DD /* MainWindowController.swift */,
 				287D72E1236B12C3003919DD /* MainKeyController.swift */,
 				28B6374F236C082100C7210D /* MainPrepareController.swift */,
-				28B63753236C11F300C7210D /* MainWechatController.swift */,
+				28B63753236C11F300C7210D /* MainNoticeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -199,6 +201,7 @@
 			children = (
 				28A00D24236AABB0009F443B /* APIPgyerTarget.swift */,
 				287D72DA236AB911003919DD /* APIWechatTarget.swift */,
+				2840506C240CDD8200AF1609 /* APIFeishuTarget.swift */,
 			);
 			path = Target;
 			sourceTree = "<group>";
@@ -392,11 +395,12 @@
 				28B63750236C082100C7210D /* MainPrepareController.swift in Sources */,
 				287D72DE236B1125003919DD /* MainWindowController.swift in Sources */,
 				28A00D1B236AAA53009F443B /* Pgyer.swift in Sources */,
-				28B63756236C169700C7210D /* Wechat.swift in Sources */,
+				28B63756236C169700C7210D /* Robot.swift in Sources */,
 				28A00D13236A9E4A009F443B /* Formator.swift in Sources */,
 				283F4F6F236A8A190094A4B3 /* MainViewController.swift in Sources */,
 				287D72E0236B1244003919DD /* Storyboard.swift in Sources */,
 				28B6374C236BDFF100C7210D /* Analysis.swift in Sources */,
+				2840506D240CDD8200AF1609 /* APIFeishuTarget.swift in Sources */,
 				28A00D0D236A9DEA009F443B /* FileInfo.swift in Sources */,
 				283F4F6D236A8A190094A4B3 /* AppDelegate.swift in Sources */,
 				28A00D4E236AABB0009F443B /* APICancellableWrapper.swift in Sources */,
@@ -404,7 +408,7 @@
 				28A00D4C236AABB0009F443B /* APIError.swift in Sources */,
 				28A00D17236AA1B7009F443B /* ViewController.swift in Sources */,
 				28A00D4D236AABB0009F443B /* APIResult.swift in Sources */,
-				28B63754236C11F300C7210D /* MainWechatController.swift in Sources */,
+				28B63754236C11F300C7210D /* MainNoticeController.swift in Sources */,
 				28A00D4F236AABB0009F443B /* APIOption.swift in Sources */,
 				287D72E2236B12C3003919DD /* MainKeyController.swift in Sources */,
 				28A00D0B236A9DC3009F443B /* DragContainer.swift in Sources */,

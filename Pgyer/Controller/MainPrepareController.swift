@@ -56,7 +56,7 @@ class MainPrepareController: ViewController<PrepareView> {
             self.build = value
             
             // 弹出企业微信
-            let controller =  MainWechatController.instance(self.bundleId)
+            let controller =  MainNoticeController.instance(self.bundleId)
             controller.delegate = self
             self.presentAsModalWindow(controller)
         }
@@ -103,12 +103,12 @@ extension MainPrepareController {
     }
     
     // 关联企业微信
-    private func sendWetch(_ build: Build, robot: Wechat.Robot) {
+    private func sendWetch(with robot: Robot.Wechat) {
+        guard let build = build else { return }
         // 发信息
         let url = "http://www.pgyer.com/" + build.buildShortcutUrl
         let content = """
             \(container.updateDescTextView.string)
-            \n
             安装地址: \(url)
             安装密码: \(Pgyer.password)
             """
@@ -126,13 +126,32 @@ extension MainPrepareController {
             }
         }
     }
+    
+    // 关联飞书
+    private func sendFeishu(with robot: Robot.Feishu) {
+        guard let build = build else { return }
+        // 发信息
+        let url = "http://www.pgyer.com/" + build.buildShortcutUrl
+        let content = """
+            \(container.updateDescTextView.string)
+            安装地址: \(url)
+            安装密码: \(Pgyer.password)
+            """
+        API.feishu.load(.sendText(key: robot.key, title: "[iOS]\(build.buildName)", content: content))
+    }
 }
 
 extension MainPrepareController: MainWechatControllerDelegate {
     
-    func done(robots: [Wechat.Robot]) {
-        guard let build = build else { return }
-        robots.forEach { sendWetch(build, robot: $0) }
+    func done(robots: [Robot]) {
+        robots.forEach {
+            switch $0 {
+            case .feishu(let feishu):
+                sendFeishu(with: feishu)
+            case .wechat(let wechat):
+                sendWetch(with: wechat)
+            }
+        }
     }
 }
 
@@ -149,6 +168,7 @@ extension MainPrepareController {
     }
     
     struct Build: Codable {
+        let buildName: String
         let buildShortcutUrl: String
         let buildQRCodeURL: String
         let buildUpdated: String

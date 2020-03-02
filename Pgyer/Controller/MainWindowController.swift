@@ -12,6 +12,9 @@ class MainWindowController: NSWindowController {
 	
 	override func windowDidLoad() {
 		super.windowDidLoad()
-        contentViewController = MainViewController.instance()
 	}
+    
+    static func instance() -> Self {
+        return StoryBoard.main.instance()
+    }
 }

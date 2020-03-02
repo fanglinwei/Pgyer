@@ -1,5 +1,5 @@
 //
-//  MainWechatController.swift
+//  MainNoticeController.swift
 //  PgyerUpdate
 //
 //  Created by 方林威 on 2019/11/1.
@@ -9,15 +9,16 @@
 import Cocoa
 
 protocol MainWechatControllerDelegate: NSObjectProtocol {
-    func done(robots: [Wechat.Robot])
+    func done(robots: [Robot])
 }
 
-class MainWechatController: NSViewController {
+class MainNoticeController: NSViewController {
     
     weak var delegate: MainWechatControllerDelegate?
 
-    @IBOutlet weak var box: NSButton!
-    @IBOutlet weak var qrCodeBox: NSButton!
+    @IBOutlet weak var feishuBox: NSButton!
+    @IBOutlet weak var wxBox: NSButton!
+    
     
     private var bundleId: String = ""
     override func viewDidLoad() {
@@ -26,16 +27,21 @@ class MainWechatController: NSViewController {
     }
     
     private func setup() {
-        box.state = .on
+        feishuBox.state = .on
+        wxBox.state = .off
     }
     
     @IBAction func doneAction(_ sender: Any) {
-        var robots: [Wechat.Robot] = []
+        var robots: [Robot] = []
         
-        let isQR = qrCodeBox.state == .on
-        let robot = Wechat.Robot(key: "0a3fdd95-47cd-4dd2-9790-bc2f7efd2cb9", isQR: isQR)
-        robots.append(robot)
+        if feishuBox.state == .on {
+            robots.append(.feishu(Robot.Feishu()))
+        }
         
+        if wxBox.state == .on {
+            robots.append(.wechat(Robot.Wechat()))
+        }
+
         delegate?.done(robots: robots)
         dismiss(self)
     }

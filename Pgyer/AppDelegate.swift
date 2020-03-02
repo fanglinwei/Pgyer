@@ -10,15 +10,18 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-    fileprivate var popover = NSPopover()
     
+    static var shared: AppDelegate {
+        return NSApplication.shared.delegate as! AppDelegate
+    }
+    
+    private var popover = NSPopover()
+    private lazy var windowController = MainWindowController.instance()
     /// Status bar Pock icon
     private lazy var statusbar = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         setupStatusbar()
-        popover.contentViewController = MainViewController.instance()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -44,5 +47,18 @@ extension AppDelegate {
         }
         button.image = #imageLiteral(resourceName: "inner-icon")
         button.action = #selector(showPopover)
+        popover.contentViewController = MainViewController.instance()
+    }
+    
+    static func hidenPopover() {
+        shared.popover.close()
+    }
+    
+    static func window(for controller: NSViewController) {
+        shared.windowController.window?.orderOut(nil)
+        shared.windowController.contentViewController = controller
+        shared.windowController.window?.center()
+        shared.windowController.window?.makeKey()
+        shared.windowController.window?.orderFront(nil)
     }
 }

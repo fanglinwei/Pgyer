@@ -41,7 +41,6 @@ extension MainViewController: DragContainerDelegate {
     
     func draggingFileAccept(_ file: FileInfo) {
         Analysis.look(with: file.path) { [weak self](result) in
-            guard let self = self else { return }
             switch result {
             case .success(let info):
                 DispatchQueue.main.async {
@@ -53,7 +52,8 @@ extension MainViewController: DragContainerDelegate {
                         date: info.creationDate,
                         path: file.path
                     )
-                    self.presentAsModalWindow(controller)
+                    AppDelegate.hidenPopover()
+                    AppDelegate.window(for: controller)
                 }
                 
             case .failure(let error):
